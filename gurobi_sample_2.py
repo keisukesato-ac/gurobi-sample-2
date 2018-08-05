@@ -106,7 +106,7 @@ for i in I:
                                  name = f"con_1({i})")
 con_2 = {}
 for j in J:
-    con_1[j] = model_2.addConstr(gp.quicksum(x[i, j] for i in I) >= 1, 
+    con_2[j] = model_2.addConstr(gp.quicksum(x[i, j] for i in I) >= 1, 
                                  name = f"con_2({j})")
 
 
